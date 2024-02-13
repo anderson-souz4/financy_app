@@ -15,9 +15,9 @@ Este é um aplicativo Flutter para auxiliar no gerenciamento financeiro pessoal.
 
 Para rodar o aplicativo localmente, siga estas instruções:
 
-1. Clone este repositório para sua máquina local:` 
+    1. Clone este repositório para sua máquina local:` 
 
-> 	git clonehttps://github.com/anderson-souz4/financy_app.git
+> 	git clone https://github.com/anderson-souz4/financy_app.git
 
 
  `2. Navegue até o diretório do projeto:` 
