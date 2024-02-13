@@ -1,4 +1,5 @@
-import 'package:flutter/cupertino.dart';
+import 'package:financy_app/commons/app_colors.dart';
+import 'package:financy_app/commons/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatelessWidget{
@@ -13,15 +14,9 @@ class SplashPage extends StatelessWidget{
         gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [
-          Color(0xFF63B5AF),
-          Color(0xFF438883)])
+            colors: AppColors.greenGradient)
       ),
-      child: const Text('financy', style: TextStyle(
-          fontSize: 50,
-          fontWeight:
-          FontWeight.w700,
-          color: Colors.white),),
+      child: Text('financy', style: AppTextStyle.bigText.copyWith(color: AppColors.white)),
       )
     );
   }
