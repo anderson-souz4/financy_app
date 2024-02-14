@@ -2,6 +2,8 @@ import 'package:financy_app/commons/app_colors.dart';
 import 'package:financy_app/commons/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
+import '../../widgets/PrimaryButton.dart';
+
 class OnBoardingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -25,7 +27,19 @@ class OnBoardingPage extends StatelessWidget {
           Text(" Save More ",
               style: AppTextStyle.mediumText
                   .copyWith(color: AppColors.greenlightTwo)),
-          ElevatedButton(onPressed: null, child: Text('Get Started')),
+          const SizedBox(
+            height: 16,
+          ),
+          Padding(
+            padding: const EdgeInsets.all(24),
+            child: PrimaryButton(
+              text: 'Get Started',
+              onPressed: () {},
+            ),
+          ),
+          SizedBox(
+            height: 16,
+          ),
           Text(
             'Already have account? Log In',
             style: AppTextStyle.smallText.copyWith(color: AppColors.grey),
